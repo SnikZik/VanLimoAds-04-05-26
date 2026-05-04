@@ -100,9 +100,6 @@
   .rec .t{ font-family:'Archivo','Heebo'; font-weight:700; font-size:20px; margin-top:6px; line-height:1.3;}
   .rec p{ margin-top:8px; font-size:14px; color:var(--muted); line-height:1.5;}
 
-  .neg-list{ display:flex; flex-wrap:wrap; gap:8px; margin:16px 0;}
-  .neg-tag{ font-family:'JetBrains Mono', monospace; font-size:12px; background:rgba(164,0,26,.08); color:var(--red); padding:4px 12px; border-radius:4px; direction:ltr;}
-
   .toc{ border:1px solid var(--rule); padding:28px 32px; margin:32px 0 0; background:rgba(255,255,255,.4); }
   .toc .h{ font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--muted); letter-spacing:.16em; text-transform:uppercase; margin-bottom:14px;}
   .toc ol{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:6px 32px;}
@@ -163,8 +160,8 @@
     </p>
     <div class="meta">
       <div><div class="k">לקוח</div><div class="v">Van Limousine</div></div>
-      <div><div class="k">פלטפורמה</div><div class="v ltr">Google Ads</div></div>
-      <div><div class="k">תקופה</div><div class="v ltr">Apr 1 → May 4, 2026</div></div>
+      <div><div class="k">פלטפורמה</div><div class="v"><span class="ltr">Google Ads</span></div></div>
+      <div><div class="k">תקופה</div><div class="v"><span class="ltr">Apr 1 → May 4, 2026</span></div></div>
       <div><div class="k">הוכן ע״י</div><div class="v">שניר זיו · Snir<span style="color:var(--purple)">.</span></div></div>
     </div>
 
@@ -189,16 +186,7 @@
       <h2>הקשר<span class="dot">.</span></h2>
     </div>
 
-    <p class="lede-block">
-      מתוך 21 קמפיינים בחשבון, <b>3 קמפיינים</b> פעלו בפועל בתקופה זו.
-      יתר הקמפיינים היו מושהים ולא הניבו חשיפות או הוצאה.
-    </p>
-
-    <p>
-      הקמפיין הראשי התחיל להניב חשיפות רק ב-<b>7 באפריל</b> — שישה ימים ראשונים של
-      החודש עברו ללא פעילות. לקראת סוף התקופה נרשמה עלייה ברורה בחשיפות: מ-30
-      ב-1 במאי ל-<b>107 ב-4 במאי</b>, מה שמצביע על מומנטום חיובי.
-    </p>
+    <p>התחלנו פעילות ב-07/04.</p>
 
     <div class="sub-section">
       <h3 class="sub">מצב הקמפיינים בחשבון</h3>
@@ -210,42 +198,45 @@
             <th class="num">תקציב יומי</th>
             <th class="num">חשיפות</th>
             <th class="num">קליקים</th>
+            <th class="num">הוצאה</th>
+            <th class="num">המרות</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="kw ltr">Search | Israel | Chauffeur | In-Market</td>
+            <td class="kw"><span class="ltr">Search | Israel | Chauffeur | In-Market</span></td>
             <td><span class="pill pill-go">פעיל</span></td>
-            <td class="num ltr">₪50</td>
+            <td class="num"><span class="ltr">₪50</span></td>
             <td class="num">502</td>
             <td class="num" style="color:var(--purple); font-weight:700;">41</td>
+            <td class="num"><span class="ltr">₪1,441</span></td>
+            <td class="num good">22.5</td>
           </tr>
           <tr>
-            <td class="kw ltr">Search | Israel | Chauffeur | Global Intent</td>
+            <td class="kw"><span class="ltr">Van Liousine | all topics | 082019</span></td>
             <td><span class="pill pill-go">פעיל</span></td>
-            <td class="num ltr">₪30</td>
-            <td class="num">713</td>
-            <td class="num" style="color:var(--purple); font-weight:700;">43</td>
-          </tr>
-          <tr>
-            <td class="kw ltr">Van Liousine | all topics | 082019</td>
-            <td><span class="pill pill-go">פעיל</span></td>
-            <td class="num ltr">₪10</td>
+            <td class="num"><span class="ltr">₪10</span></td>
             <td class="num">334</td>
             <td class="num" style="color:var(--purple); font-weight:700;">54</td>
+            <td class="num"><span class="ltr">₪239</span></td>
+            <td class="num good">10</td>
           </tr>
           <tr>
-            <td class="kw ltr">Search | Israel | Allenby | VIP Transfer</td>
+            <td class="kw"><span class="ltr">Search | Israel | Allenby | VIP Transfer</span></td>
             <td><span class="pill pill-warn">מושהה חלקית</span></td>
-            <td class="num ltr">₪50</td>
+            <td class="num"><span class="ltr">₪50</span></td>
             <td class="num">87</td>
             <td class="num">10</td>
+            <td class="num"><span class="ltr">₪644</span></td>
+            <td class="num">2</td>
           </tr>
           <tr>
-            <td class="kw" style="color:var(--muted);">17 קמפיינים נוספים</td>
+            <td class="kw" style="color:var(--muted);">18 קמפיינים נוספים</td>
             <td><span class="pill pill-stop">מושהים</span></td>
-            <td class="num" style="color:var(--muted);">—</td>
+            <td class="num" style="color:var(--muted);">-</td>
             <td class="num" style="color:var(--muted);">0</td>
+            <td class="num" style="color:var(--muted);">0</td>
+            <td class="num" style="color:var(--muted);">-</td>
             <td class="num" style="color:var(--muted);">0</td>
           </tr>
         </tbody>
@@ -264,75 +255,75 @@
     </div>
 
     <p class="lede-block">
-      סה"כ <b>₪3,317</b> הוצאה, <b>148 קליקים</b> ו-<b>20.5 המרות</b> בתקופה.
-      עלות ממוצעת להמרה: <b>₪162</b>.
+      סה"כ <b>₪2,324</b> הוצאה, <b>105 קליקים</b> ו-<b>34.5 המרות</b> בתקופה.
+      עלות ממוצעת להמרה: <b>₪67</b>.
     </p>
 
     <div class="kpis">
       <div class="kpi">
         <div class="k">קליקים</div>
-        <div class="v">148</div>
-        <div class="d">CTR 9.04%</div>
+        <div class="v">105</div>
+        <div class="d">CTR 11.4%</div>
       </div>
       <div class="kpi">
         <div class="k">הוצאה</div>
-        <div class="v"><span class="u">₪</span>3,317</div>
-        <div class="d">עלות ממוצעת לקליק ₪22.41</div>
+        <div class="v"><span class="u">₪</span>2,324</div>
+        <div class="d">עלות ממוצעת לקליק ₪22.1</div>
       </div>
       <div class="kpi">
         <div class="k">המרות</div>
-        <div class="v">20.5</div>
-        <div class="d">שיעור המרה 13.85%</div>
+        <div class="v">34.5</div>
+        <div class="d">כולל 15 שיחות טלפון</div>
       </div>
     </div>
 
     <div class="kpis" style="margin-top:0;">
       <div class="kpi">
         <div class="k">חשיפות</div>
-        <div class="v">1,637</div>
+        <div class="v">923</div>
         <div class="d">קמפיינים פעילים בלבד</div>
       </div>
       <div class="kpi">
         <div class="k">עלות להמרה</div>
-        <div class="v"><span class="u">₪</span>162</div>
-        <div class="d">מטרה: לרדת מ-₪120</div>
+        <div class="v"><span class="u">₪</span>67</div>
+        <div class="d">כולל שיחות טלפון</div>
       </div>
       <div class="kpi">
         <div class="k">CTR ממוצע</div>
-        <div class="v">9%</div>
+        <div class="v">11.4%</div>
         <div class="d">גבוה מהממוצע בענף</div>
       </div>
     </div>
 
     <div class="sub-section">
-      <h3 class="sub">קמפיין In-Market — הכוכב של התקופה</h3>
+      <h3 class="sub">קמפיין In-Market: הכוכב של התקופה</h3>
       <p>
-        קמפיין ה-<b>In-Market</b> הניב <b>12.5 המרות מתוך 41 קליקים</b> — שיעור המרה של
-        <b>30.5%</b> ועלות להמרה של <b>₪115</b>. זה הקמפיין היעיל ביותר ומצדיק הגדלת תקציב.
-        לעומתו, קמפיין ה-<b>Global Intent</b> הוציא ₪993 עבור המרה אחת בלבד — פי 8.6
-        מקמפיין ה-In-Market.
+        הקמפיין הכי חזק בחשבון הוא In-Market. בקמפיין הזה גוגל מראה את המודעות רק
+        לאנשים שכבר מחפשים שירות הסעות יוקרה, כלומר הקהל הכי ממוקד שאפשר.
+        התוצאות מדברות בעד עצמן: <b>22.5 המרות מ-41 קליקים</b>, שיעור המרה של
+        <b>54.9%</b> ועלות להמרה של <b>₪64</b> בלבד.
       </p>
 
       <div class="insight-grid">
         <div class="insight">
           <div class="n">In-Market · CPA</div>
-          <div class="v"><span class="u">₪</span>115</div>
-          <p>הכי יעיל. שיעור המרה 30.5% — גבוה מאוד לענף ההסעות.</p>
+          <div class="v"><span class="u">₪</span>64</div>
+          <p>הכי יעיל. שיעור המרה 54.9% מ-41 קליקים.</p>
         </div>
         <div class="insight">
-          <div class="n">Global Intent · CPA</div>
-          <div class="v" style="color:var(--red);"><span class="u">₪</span>993</div>
-          <p>הוצאה גבוהה, המרה אחת. דורש אופטימיזציה דחופה.</p>
+          <div class="n">Van Liousine · CPA</div>
+          <div class="v"><span class="u">₪</span>24</div>
+          <p>הכי זול להמרה. CPA מצוין עם CTR של 16.2%.</p>
         </div>
         <div class="insight">
-          <div class="n">Van Liousine all topics · CPA</div>
-          <div class="v"><span class="u">₪</span>40</div>
-          <p>הכי זול להמרה. תקציב ₪10/יום — מוגבל מדי ביחס לביצועים.</p>
+          <div class="n">שיחות טלפון</div>
+          <div class="v">+15</div>
+          <p>המרות שיחה נוספות שנכנסו לחישוב הכולל.</p>
         </div>
         <div class="insight">
-          <div class="n">Allenby VIP Transfer · CPA</div>
-          <div class="v"><span class="u">₪</span>644</div>
-          <p>קהל נישה ספציפי מאוד. CPC גבוה (₪64) אבל כוונה גבוהה.</p>
+          <div class="n">CPA כולל</div>
+          <div class="v"><span class="u">₪</span>67</div>
+          <p>34.5 המרות סה"כ בהוצאה של ₪2,324.</p>
         </div>
       </div>
     </div>
@@ -348,7 +339,7 @@
     </div>
 
     <p class="lede-block">
-      פירוט מלא של ארבעת הקמפיינים שהניבו נתונים בתקופה.
+      פירוט מלא של שלושת הקמפיינים הפעילים בתקופה.
     </p>
 
     <table class="report">
@@ -366,65 +357,55 @@
       </thead>
       <tbody>
         <tr>
-          <td class="kw ltr" style="font-size:13px;">Search | In-Market</td>
+          <td class="kw" style="font-size:13px;"><span class="ltr">Search | In-Market</span></td>
           <td class="num">502</td>
           <td class="num">41</td>
           <td class="num">8.2%</td>
-          <td class="num ltr">₪1,441</td>
-          <td class="num good">12.5</td>
-          <td class="num good">30.5%</td>
-          <td class="num good ltr">₪115</td>
+          <td class="num"><span class="ltr">₪1,441</span></td>
+          <td class="num good">22.5</td>
+          <td class="num good">54.9%</td>
+          <td class="num good"><span class="ltr">₪64</span></td>
         </tr>
         <tr>
-          <td class="kw ltr" style="font-size:13px;">Search | Global Intent</td>
-          <td class="num">713</td>
-          <td class="num">43</td>
-          <td class="num">6.0%</td>
-          <td class="num ltr">₪993</td>
-          <td class="num bad">1.0</td>
-          <td class="num bad">2.3%</td>
-          <td class="num bad ltr">₪993</td>
-        </tr>
-        <tr>
-          <td class="kw ltr" style="font-size:13px;">Van Liousine | all topics</td>
+          <td class="kw" style="font-size:13px;"><span class="ltr">Van Liousine | all topics</span></td>
           <td class="num">334</td>
           <td class="num">54</td>
           <td class="num" style="color:var(--purple); font-weight:700;">16.2%</td>
-          <td class="num ltr">₪239</td>
-          <td class="num">6.0</td>
-          <td class="num">11.1%</td>
-          <td class="num good ltr">₪40</td>
+          <td class="num"><span class="ltr">₪239</span></td>
+          <td class="num">10</td>
+          <td class="num">18.5%</td>
+          <td class="num good"><span class="ltr">₪24</span></td>
         </tr>
         <tr>
-          <td class="kw ltr" style="font-size:13px;">Allenby | VIP Transfer</td>
+          <td class="kw" style="font-size:13px;"><span class="ltr">Allenby | VIP Transfer</span></td>
           <td class="num">87</td>
           <td class="num">10</td>
           <td class="num">11.5%</td>
-          <td class="num ltr">₪644</td>
-          <td class="num">1.0</td>
-          <td class="num">10.0%</td>
-          <td class="num ltr" style="color:var(--muted);">₪644</td>
+          <td class="num"><span class="ltr">₪644</span></td>
+          <td class="num">2</td>
+          <td class="num">20.0%</td>
+          <td class="num"><span class="ltr" style="color:var(--muted);">₪322</span></td>
         </tr>
         <tr class="total">
           <td class="kw">סה"כ</td>
-          <td class="num">1,636</td>
-          <td class="num">148</td>
-          <td class="num">9.0%</td>
-          <td class="num ltr">₪3,317</td>
-          <td class="num">20.5</td>
-          <td class="num">13.9%</td>
-          <td class="num ltr">₪162</td>
+          <td class="num">923</td>
+          <td class="num">105</td>
+          <td class="num">11.4%</td>
+          <td class="num"><span class="ltr">₪2,324</span></td>
+          <td class="num">34.5</td>
+          <td class="num">32.9%</td>
+          <td class="num"><span class="ltr">₪67</span></td>
         </tr>
       </tbody>
     </table>
-    <div class="source">מקור: Google Ads · Campaign Report · Apr 1 – May 4, 2026 · קמפיינים עם 0 פעילות הוצאו</div>
+    <div class="source">מקור: Google Ads · Campaign Report · Apr 1 – May 4, 2026 · כולל 15 המרות שיחות טלפון</div>
 
     <div class="sub-section">
       <h3 class="sub">קבוצות מודעות מובילות</h3>
       <p>
-        מתוך כל קבוצות המודעות, ארבע הניבו ביצועים בפועל. קבוצת
-        <b>AG | Chauffeur | Israel | In-Market</b> היא המנוע העיקרי עם 30% שיעור המרה.
-        קבוצת <b>נסיעות עסקים</b> מציגה CTR של 14% — גבוה יחסית לתקציב הנמוך שלה.
+        ארבע קבוצות מודעות הניבו ביצועים בפועל. קבוצת
+        <b>AG | Chauffeur | Israel | In-Market</b> היא המנוע העיקרי עם 54.9% שיעור המרה.
+        קבוצת <b>נסיעות עסקים</b> מציגה CTR של 14% עם עלות נמוכה מאוד.
       </p>
       <table class="report">
         <thead>
@@ -439,44 +420,36 @@
         </thead>
         <tbody>
           <tr>
-            <td class="kw ltr" style="font-size:13px;">AG | Chauffeur | Israel | In-Market</td>
-            <td style="font-size:12px; color:var(--muted);" class="ltr">In-Market</td>
+            <td class="kw" style="font-size:13px;"><span class="ltr">AG | Chauffeur | Israel | In-Market</span></td>
+            <td style="font-size:12px; color:var(--muted);"><span class="ltr">In-Market</span></td>
             <td class="num">41</td>
-            <td class="num ltr">₪1,441</td>
-            <td class="num good">12.5</td>
-            <td class="num good ltr">₪115</td>
-          </tr>
-          <tr>
-            <td class="kw ltr" style="font-size:13px;">AG | Chauffeur | Israel</td>
-            <td style="font-size:12px; color:var(--muted);" class="ltr">Global Intent</td>
-            <td class="num">43</td>
-            <td class="num ltr">₪993</td>
-            <td class="num bad">1.0</td>
-            <td class="num bad ltr">₪993</td>
+            <td class="num"><span class="ltr">₪1,441</span></td>
+            <td class="num good">22.5</td>
+            <td class="num good"><span class="ltr">₪64</span></td>
           </tr>
           <tr>
             <td class="kw">נסיעות עסקים</td>
             <td style="font-size:12px; color:var(--muted);">Van Liousine</td>
             <td class="num">35</td>
-            <td class="num ltr">₪164</td>
-            <td class="num">4.0</td>
-            <td class="num good ltr">₪41</td>
+            <td class="num"><span class="ltr">₪164</span></td>
+            <td class="num">7</td>
+            <td class="num good"><span class="ltr">₪23</span></td>
           </tr>
           <tr>
             <td class="kw">הסעות מנתבג</td>
             <td style="font-size:12px; color:var(--muted);">Van Liousine</td>
             <td class="num">11</td>
-            <td class="num ltr">₪65</td>
-            <td class="num">2.0</td>
-            <td class="num good ltr">₪32</td>
+            <td class="num"><span class="ltr">₪65</span></td>
+            <td class="num">3</td>
+            <td class="num good"><span class="ltr">₪22</span></td>
           </tr>
           <tr>
-            <td class="kw ltr" style="font-size:13px;">Allenby Crossing | High Intent</td>
-            <td style="font-size:12px; color:var(--muted);" class="ltr">Allenby</td>
+            <td class="kw" style="font-size:13px;"><span class="ltr">Allenby Crossing | High Intent</span></td>
+            <td style="font-size:12px; color:var(--muted);"><span class="ltr">Allenby</span></td>
             <td class="num">10</td>
-            <td class="num ltr">₪644</td>
-            <td class="num">1.0</td>
-            <td class="num ltr" style="color:var(--muted);">₪644</td>
+            <td class="num"><span class="ltr">₪644</span></td>
+            <td class="num">2</td>
+            <td class="num"><span class="ltr" style="color:var(--muted);">₪322</span></td>
           </tr>
         </tbody>
       </table>
@@ -493,8 +466,8 @@
     </div>
 
     <p class="lede-block">
-      <b>ישראל</b> מהווה 78% מהקליקים ו-90%+ מההמרות. ארה"ב וירדן מופיעים כשווקים
-      משניים עם פוטנציאל — במיוחד בשירותי ה-Allenby ו-Chauffeur.
+      <b>ישראל</b> מהווה 84% מהקליקים ו-97% מההמרות. ירדן וארה"ב מופיעים כשווקים
+      משניים, במיוחד בשירותי ה-Allenby ו-Chauffeur.
     </p>
 
     <div class="sub-section">
@@ -513,51 +486,51 @@
         <tbody>
           <tr>
             <td class="kw">🇮🇱 ישראל</td>
-            <td class="num" style="color:var(--purple); font-weight:700;">116</td>
-            <td class="num">1,121</td>
-            <td class="num">10.4%</td>
-            <td class="num good">18.5</td>
-            <td class="num good ltr">₪119</td>
+            <td class="num" style="color:var(--purple); font-weight:700;">88</td>
+            <td class="num">800</td>
+            <td class="num">11.0%</td>
+            <td class="num good">33.5</td>
+            <td class="num good"><span class="ltr">₪60</span></td>
           </tr>
           <tr>
-            <td class="kw ltr">🇺🇸 United States</td>
-            <td class="num">14</td>
-            <td class="num">244</td>
-            <td class="num">5.7%</td>
-            <td class="num">1.0</td>
-            <td class="num ltr" style="color:var(--muted);">₪422</td>
+            <td class="kw"><span class="ltr">🇺🇸 United States</span></td>
+            <td class="num">6</td>
+            <td class="num">64</td>
+            <td class="num">9.4%</td>
+            <td class="num" style="color:var(--muted);">0</td>
+            <td class="num" style="color:var(--muted);">-</td>
           </tr>
           <tr>
-            <td class="kw ltr">🇵🇸 Palestine</td>
+            <td class="kw"><span class="ltr">🇵🇸 Palestine</span></td>
             <td class="num">5</td>
             <td class="num">27</td>
             <td class="num">18.5%</td>
             <td class="num" style="color:var(--muted);">0</td>
-            <td class="num" style="color:var(--muted);">—</td>
+            <td class="num" style="color:var(--muted);">-</td>
           </tr>
           <tr>
-            <td class="kw ltr">🇯🇴 Jordan</td>
+            <td class="kw"><span class="ltr">🇯🇴 Jordan</span></td>
             <td class="num">3</td>
             <td class="num">10</td>
             <td class="num">30.0%</td>
             <td class="num good">1.0</td>
-            <td class="num ltr" style="color:var(--muted);">₪293</td>
+            <td class="num"><span class="ltr" style="color:var(--muted);">₪293</span></td>
           </tr>
           <tr>
-            <td class="kw ltr">🇨🇭 Switzerland</td>
+            <td class="kw"><span class="ltr">🇨🇭 Switzerland</span></td>
             <td class="num">1</td>
             <td class="num">20</td>
             <td class="num">5.0%</td>
             <td class="num" style="color:var(--muted);">0</td>
-            <td class="num" style="color:var(--muted);">—</td>
+            <td class="num" style="color:var(--muted);">-</td>
           </tr>
           <tr>
-            <td class="kw ltr">🇮🇳 India</td>
+            <td class="kw"><span class="ltr">🇮🇳 India</span></td>
             <td class="num">2</td>
             <td class="num">32</td>
             <td class="num">6.3%</td>
             <td class="num" style="color:var(--muted);">0</td>
-            <td class="num" style="color:var(--muted);">—</td>
+            <td class="num" style="color:var(--muted);">-</td>
           </tr>
         </tbody>
       </table>
@@ -568,7 +541,7 @@
       <h3 class="sub">מונחי חיפוש שהמירו</h3>
       <p>
         המונחים החזקים ביותר מגיעים ממונחי <b>chauffeur + ישראל</b> ו-<b>tel aviv</b>.
-        מונח <b>chauffeur service tel aviv</b> הניב 7 המרות מ-15 קליקים —
+        מונח <b>chauffeur service tel aviv</b> הניב 7 המרות מ-15 קליקים,
         שיעור המרה של <b>46.7%</b> ועלות להמרה של <b>₪85</b>.
       </p>
       <table class="report">
@@ -584,92 +557,63 @@
         </thead>
         <tbody>
           <tr>
-            <td class="kw ltr">chauffeur service tel aviv</td>
+            <td class="kw"><span class="ltr">chauffeur service tel aviv</span></td>
             <td class="num">15</td>
-            <td class="num ltr">₪594</td>
+            <td class="num"><span class="ltr">₪594</span></td>
             <td class="num good">7.0</td>
             <td class="num good">46.7%</td>
-            <td class="num good ltr">₪85</td>
+            <td class="num good"><span class="ltr">₪85</span></td>
           </tr>
           <tr>
-            <td class="kw ltr">chauffeur service israel</td>
+            <td class="kw"><span class="ltr">chauffeur service israel</span></td>
             <td class="num">13</td>
-            <td class="num ltr">₪434</td>
+            <td class="num"><span class="ltr">₪434</span></td>
             <td class="num good">3.5</td>
             <td class="num good">26.9%</td>
-            <td class="num good ltr">₪124</td>
+            <td class="num good"><span class="ltr">₪124</span></td>
           </tr>
           <tr>
-            <td class="kw ltr">private driver israel</td>
+            <td class="kw"><span class="ltr">private driver israel</span></td>
             <td class="num">4</td>
-            <td class="num ltr">₪172</td>
+            <td class="num"><span class="ltr">₪172</span></td>
             <td class="num">1.0</td>
             <td class="num">25.0%</td>
-            <td class="num ltr">₪172</td>
+            <td class="num"><span class="ltr">₪172</span></td>
           </tr>
           <tr>
-            <td class="kw ltr">king hussein border crossing</td>
+            <td class="kw"><span class="ltr">king hussein border crossing</span></td>
             <td class="num">2</td>
-            <td class="num ltr">₪200</td>
+            <td class="num"><span class="ltr">₪200</span></td>
             <td class="num">1.0</td>
             <td class="num">50.0%</td>
-            <td class="num ltr" style="color:var(--muted);">₪200</td>
+            <td class="num"><span class="ltr" style="color:var(--muted);">₪200</span></td>
           </tr>
           <tr>
-            <td class="kw ltr">crossing allenby bridge</td>
+            <td class="kw"><span class="ltr">crossing allenby bridge</span></td>
             <td class="num">4</td>
-            <td class="num ltr">₪388</td>
+            <td class="num"><span class="ltr">₪388</span></td>
             <td class="num">1.0</td>
             <td class="num">25.0%</td>
-            <td class="num ltr" style="color:var(--muted);">₪388</td>
+            <td class="num"><span class="ltr" style="color:var(--muted);">₪388</span></td>
           </tr>
           <tr>
-            <td class="kw ltr">private driver tel aviv</td>
+            <td class="kw"><span class="ltr">private driver tel aviv</span></td>
             <td class="num">1</td>
-            <td class="num ltr">₪55</td>
+            <td class="num"><span class="ltr">₪55</span></td>
             <td class="num good">1.0</td>
             <td class="num good">100%</td>
-            <td class="num good ltr">₪55</td>
+            <td class="num good"><span class="ltr">₪55</span></td>
           </tr>
           <tr>
             <td class="kw">הסעות יוקרה</td>
             <td class="num">1</td>
-            <td class="num ltr">₪1</td>
+            <td class="num"><span class="ltr">₪1</span></td>
             <td class="num good">1.0</td>
             <td class="num good">100%</td>
-            <td class="num good ltr">₪1</td>
+            <td class="num good"><span class="ltr">₪1</span></td>
           </tr>
         </tbody>
       </table>
-    </div>
-
-    <div class="sub-section">
-      <h3 class="sub">מונחי חיפוש לא רלוונטיים — למחיקה</h3>
-      <p>
-        המערכת הגישה מודעות למונחים שאינם קהל יעד של השירות.
-        יש להוסיף אותם כ-<b>Negative Keywords</b> כדי לחסוך הוצאה מיותרת.
-      </p>
-      <div class="neg-list">
-        <span class="neg-tag">nesher sherut</span>
-        <span class="neg-tag">sherut jerusalem</span>
-        <span class="neg-tag">sherut ben gurion</span>
-        <span class="neg-tag">nesher ben gurion</span>
-        <span class="neg-tag">ben gurion limo tel aviv airport limo</span>
-        <span class="neg-tag">taxis tel aviv</span>
-        <span class="neg-tag">tel aviv taxis</span>
-        <span class="neg-tag">taxigo israel</span>
-        <span class="neg-tag">city ride israel</span>
-        <span class="neg-tag">ormax israel</span>
-        <span class="neg-tag">actibus israel</span>
-        <span class="neg-tag">bon tour israel</span>
-        <span class="neg-tag">blacklane tel aviv</span>
-        <span class="neg-tag">מוניות עמל נתבג</span>
-        <span class="neg-tag">מוניות שירות מנתבג לחיפה</span>
-      </div>
-      <p style="font-size:14px; color:var(--muted);">
-        מונחים כגון nesher/sherut מצביעים על חיפוש שירות שרות — לא שירות VIP.
-        מונחים של מתחרים (Blacklane, Tal Limousine) גורמים לחשיפות מיותרות.
-      </p>
     </div>
   </section>
 
@@ -683,7 +627,7 @@
     </div>
 
     <p class="lede-block">
-      ארבעה צעדים שישפרו את היעילות ויורידו את ה-CPA מ-₪162 למתחת ל-₪120.
+      מה עושים בשלב הבא.
     </p>
 
     <div class="recs">
@@ -691,44 +635,34 @@
         <div class="n">01 · Scale</div>
         <div class="t">הגדל תקציב ל-In-Market</div>
         <p>
-          קמפיין In-Market מגיע ל-₪50/יום ו-CPA של ₪115 — מתחת ליעד.
-          להעלות לפחות ₪80-100/יום. כל שקל נוסף מייצר המרה ב-₪115.
+          קמפיין In-Market מגיע ל-₪50/יום עם CPA של ₪64.
+          להעלות ל-₪60/יום. כל שקל נוסף מייצר המרה בעלות נמוכה.
         </p>
       </div>
       <div class="rec">
-        <div class="n">02 · Optimize</div>
-        <div class="t">בדוק מחדש את Global Intent</div>
-        <p>
-          ₪993 עבור המרה אחת — לא יעיל. יש לבדוק את המודעות, עמודי הנחיתה
-          ורשימת מילות המפתח. שקול להשהות עד לאחר אופטימיזציה.
-        </p>
-      </div>
-      <div class="rec">
-        <div class="n">03 · Budget</div>
+        <div class="n">02 · Scale</div>
         <div class="t">הגדל את Van Liousine all topics</div>
         <p>
-          ₪10/יום בלבד, CPA של ₪40 — המקדם הזול ביותר בחשבון. CTR של 16%.
-          להעלות ל-₪25-30/יום מיד. עוצר את התקציב יותר מדי מוקדם.
+          ₪10/יום בלבד, CPA של ₪24 ו-CTR של 16.2%. הקמפיין הזה עוצר את
+          התקציב מוקדם מדי. להעלות מיד ל-₪20/יום.
         </p>
       </div>
       <div class="rec">
-        <div class="n">04 · Negatives</div>
-        <div class="t">הוסף Negative Keywords</div>
+        <div class="n">03 · Activate</div>
+        <div class="t">הפעל את Allenby באופן מלא</div>
         <p>
-          15+ מונחים לא רלוונטיים זוהו (שרות, נשר, מוניות, מתחרים).
-          הוסף אותם כ-Negative Keywords ברמת החשבון לחיסכון מיידי.
+          הקמפיין פעל חלקית בלבד. קהל הנישה של מעבר גבול ירדן בשירות VIP
+          הוא ייחודי. להעלות ל-₪60/יום ולוודא שפועל לאורך כל החודש.
         </p>
       </div>
-    </div>
-
-    <div class="sub-section">
-      <h3 class="sub">פוטנציאל קמפיין Allenby</h3>
-      <p>
-        קמפיין ה-Allenby (מעבר גבול ירדן בשירות VIP) פעל חלקית בלבד בתקופה זו.
-        הנתונים שיש מצביעים על <b>כוונת רכישה גבוהה מאוד</b> — CTR 11.5% ו-CPC
-        ממוצע של ₪64. ממשתמשים בירדן נרשמה המרה אחת. מומלץ להפעיל מחדש
-        ולהגדיל תקציב לקמפיין זה ל-₪30-50/יום בשלב הבא.
-      </p>
+      <div class="rec">
+        <div class="n">04 · Optimize</div>
+        <div class="t">המשך מעקב שיחות טלפון</div>
+        <p>
+          15 שיחות טלפון שנרשמו בתקופה זו מראות שהמשתמשים מגיבים.
+          לוודא שהמעקב פעיל ולנתח אילו מונחים מייצרים את השיחות.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -736,7 +670,7 @@
     <div class="contact">
       <span class="k">הוכן ע"י</span><span class="v">שניר זיו</span>
       <span class="k">תאריך</span><span class="v">מאי 2026</span>
-      <span class="k">פלטפורמה</span><span class="v ltr">Google Ads</span>
+      <span class="k">פלטפורמה</span><span class="v"><span class="ltr">Google Ads</span></span>
     </div>
     <div class="lockup">
       SNIR<span class="dot">.</span>
